@@ -37,6 +37,41 @@ while(h < length/3) h = 3*h + 1;     // 计算希尔shell的间隔大小 1, 4, 1
     h = h/3;
 }
 ```
+__归并排序算法的思路__ : 在将两个有序地数组归并成为一个更大的有序数组，很快人们就根据这个操作发明了一种简单的递归排序算法：归并排序。要将一个数组排序，可以先递归的将它分为两半分别排序，然后将结果归并起来。你将会看到，归并排序最吸引人的性质在于它能够保证将任意长度为N的数组排序所需要的时间和NlogN成正比，它的主要缺点是它所需的额外空间和N成正比。原地归并方法的思路：对于进行归并操作的两个有序数组来说，其在各自部分是有序的。为了对已经拍过序的有序数组进行整合排序，__ 就需要从两个有序数组的第一个元素开始进行比较，小的元素直接放入到结果数组中。__ 通过将存在小元素的数组指针向前移动一个位置，将下一个元素与之前元素进行比较。当lo~mid部分的元素比较指针超过mid的时候，说明lo~mid中的元素比剩余mid+1~hi部分的剩余元素小，这个时候只需要将{mid~hi}剩余部分的元素直接拷贝到结果数组中就可以。对于{mid~hi}部分数组指针超过hi的情况，说明{mid+1~hi}部分的数组已经存放到结果集中了，这个时候只需要将{lo~mid}部分剩余的元素直接拷贝就可以。
+```java
+for(int k = lo; k <= hi; k++) {     // 将array结果归并到array[lo..hi]
+  if (i > mid)      array[k] = aux[j++];
+  else if (j > hi)  array[k] = aux[i++];
+  else if (less(aux[j], aux[i]))  array[k] = aux[j++];
+  else              array[k] = aux[i++];
+}
+```
+__快速排序算法的思路__ : 快速排序是一种分而治之的排序算法，它将一个数组分为两个子数组，将两部分独立地排序。快速排序和归并排序是互补的；归并排序将数组分为两个子数组分别排序，并将有序地子数组归并以将整个数组排序；而快速排序将数组排序的方式则是当两个子数组都有序地时整个数组也都有序了。在第一种情况下，递归调用发生在处理整个数组之前；在第二种情况中，递归调用发生在处理整个数组之后。在归并排序中，一个数组被等分为两半；在快速排序中，切分(partition)的位置取决于数组的内容。<br>
+&emsp;&emsp; __快速排序最核心的切分过程__ : 这部分代码按照a[lo]的值v进行切分。当指针i和j相遇时主循环退出。在循环中，`array[i]`小于v的时候我们增大i，`array[j]`大于v时我们减小j，然后交换`array[i]`和`array[j]`来保证i左侧的元素都不大于v，j右侧的元素都不小于v。当指针相遇时交换`array[lo]`和`array[j]`，切分结束(这样切分值就留在`array[j]`中了)。
+```java
+private int partition(Comparable[] array, int lo, int hi) {
+  // 将数组切分为array[lo...i-1], a[i], array[i+1...hi]
+  int i = lo, j = hi + 1;     // 左右扫描指针.
+  Comparable v = array[lo];   // 切分元素.
+  while(true) {
+    // 扫描左右，检查扫描是否结束并交换元素.
+    while(less(array[++i], v))  if(i == hi) break;
+      while(less(v, array[--j]))  if(j == lo) break;
+        if(i >= j) break;
+          exch(array, lo, j);
+    }
+    exch(array, lo, j);     // 将v = a[j]放在正确的位置上.
+    return j;               // array[lo...j-1] <= array[j] <= array[j+1..hi].
+}
+```
+而对于快速排序的部分，则进行的是直接切分后的递归sort调用.
+```java
+if (hi <= lo)   return;
+int j = partition(array, lo, hi);   // 对数组进行切分.
+sort(array, lo, j-1);    // 将左半部分array[lo...j-1]排序
+sort(array, j+1, hi);    // 将有半部分array[j+1...hi]排序
+```
+
 
 
 

@@ -1,11 +1,16 @@
 package org.interview.sort;
 
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.Arrays;
+
 /**
  * 归并排序算法MergeSort
  *
  * @author dong
  * @create 2018-07-10 下午10:43
  **/
+@Slf4j
 public class MergeSort extends AbstractBasicSortAlgorithm {
 
     private static Comparable[] aux;    // 归并所需要的辅助数组.
@@ -38,4 +43,13 @@ public class MergeSort extends AbstractBasicSortAlgorithm {
             else              array[k] = aux[i++];
         }
     }
+
+    public static void main(String[] args) {
+        Integer[] array = {1, 5, 3, 9, 7};
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.sort(array);
+        // 向console中打印出排序之后的结果.
+        log.info("sorted array: {}", Arrays.toString(array));
+    }
+
 }
