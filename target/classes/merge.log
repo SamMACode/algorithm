@@ -1,0 +1,98 @@
+/**
+ * 归并排序的核心算法.
+ * // merge操作是最核心的部分.
+ */
+public static void merge(Integer[] array, int lo, int mid, int hi) {
+    int i = lo, j = mid + 1;
+    int[] aux = new Integer[array.length];
+    for(int i = 0; i < array.length; i++) {
+        // 对数组的内容进行拷贝.
+        aux[i] = array[i];
+    }
+    for(int k = lo; k <= hi; k++) {
+        if(i > mid)     array[k] = aux[j++];
+        else if(j > hi)      array[k] = aux[i++];
+        else if(less(aux[j], aux[i])) array[k] = aux[j++];
+        else            array[k] = aux[i++];
+    }
+}
+
+public static void sort(Integer[] array, int lo, int hi) {
+    if(hi <= lo)         return;
+    int mid = lo + (hi-lo)/2;
+    sort(array, lo, mid);
+    sort(array, mid+1, hi);
+    merge(array, lo, mid, hi);
+}
+
+/**
+ * 选择排序select(冒泡排序)
+ */
+public static void selectSort(Integer[] array) {
+    int length = array.length;
+    for(int i = 0; i < array.length; i++) {     // 外围控制跑的次数.
+        int min = i;
+        for(int j = 0; j < array.length; j++) {
+            if(less(array[i], array[min])) min = j;
+            // 将最小的元素与i元素进行交换.
+            exch(array, i, min);
+        }
+    }
+}
+
+/**
+ * 希尔排序hill(核心算法)
+ */
+ public static void shellSort(Integer[] array) {
+    // 希尔排序shell,保持数组是n距离内有效.
+    int length = array.length;
+    int h = 1;  // 代表的是最终的比较长度length
+    while(h < length/3) h = 3*h + 1;    // 用于计算区间长度shell的间隔大小 1, 4, 13, 40, 121
+    // 使得元素为h长度有效.
+    while(h >= 1) {     // 最终的长度.
+        for(int i = h; i < length; i++) {
+            for(int j = i; j >= h && less(array[j], array[j-h]); j -= h) {
+                exch(array, j, j-h);
+            }
+        }
+        h = h/3;
+    }
+
+ }
+
+ /**
+  * 插入排序insertort(脚长为1).
+  */
+ public static void insertSort(Integer[] array) {
+    int length = array.length;
+    for(int i = 0; i < length; i++) {
+        // 将数组保持为i位置之前是有序的.
+        for(int j = i; j > 0 && less(array[j], array[j-1]); j--) {
+            exch(array, j, j-1);
+        }
+    }
+ }
+
+/**
+ * 快速排序的算法核心.
+ */
+public static void quickSort(Integer[] array, int lo, int hi) {
+    if(hi <= lo)    break;
+    int j = partition(array, lo, hi);   // 对数组元素进行切分.
+    sort(array, lo, j-1);       // 将左半部分array[lo...j-1]排序
+    sort(array, j+1, hi);       // 将有半部分array[j+1...hi]排序.
+}
+
+public static int partition(Integer[] array, int lo, int hi) {
+    // 将数组切分为array[lo...i-1], array[i], array[i+1...hi]
+    int i = lo, j = hi+1;
+    Integer v = array[lo];
+    while(true) {
+        while(less(a[++i], v)) if(i == hi) break;
+        while(less(v, array[--j])) if(j == lo) break;
+        if(i >= j) break;
+        exch(array, i, j);
+    }
+    exch(array, lo, j);
+    return j;
+}
