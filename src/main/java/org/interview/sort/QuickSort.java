@@ -1,15 +1,23 @@
 package org.interview.sort;
 
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.Arrays;
+import java.util.Collections;
+
 /**
  * 快速排序算法QuickSort
  *
  * @author dong
  * @create 2018-07-11 下午10:26
  **/
+@Slf4j
 public class QuickSort extends AbstractBasicSortAlgorithm {
 
     @Override
     public void sort(Comparable[] array) {
+        // 将数组的元素打乱shuffle.
+        Collections.shuffle(Arrays.asList(array));
         sort(array, 0, array.length-1);
     }
 
@@ -33,6 +41,14 @@ public class QuickSort extends AbstractBasicSortAlgorithm {
         }
         exch(array, lo, j);     // 将v = a[j]放在正确的位置上.
         return j;               // array[lo...j-1] <= array[j] <= array[j+1..hi].
+    }
+
+    public static void main(String[] args) {
+        Integer[] array = {1, 5, 3, 9, 7};
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.sort(array);
+        // 向console中打印出排序之后的结果.
+        log.info("sorted array: {}", Arrays.toString(array));
     }
 
 }
