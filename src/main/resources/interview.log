@@ -15,6 +15,7 @@
  12.Java中使用泛型的作用? 编译期的检查./在反射中访问私有方法或者属性?是否在实际项目中使用过.
  13.日志表log的设计?(表的设计能力) 关键的字段设计.
  14.关于angular/dubbo的内容?
+ 15.Spring中AOP的实现原理?Cglib和Jdk动态代理的区别?
 
  /**
   * 2018.8.10下午面试问题.
@@ -23,3 +24,6 @@
  2.MySQL建立索引的准则,索引的底层实现使用什么表示的?
  3.关于tomcat堆内存的调整问题,以及消息队列的使用场景机制?
  4.HashMap的底层实现?hashMap的负载因子是多少?
+ 5.关于MySQL的索引和主从复制方面的问题?MyBatis和Spring MVC以及Spring Ioc和Aop原理?
+ 6.maven如何解决依赖冲突?
+ 7.Java Web中的监听器和过滤器？Hibernate方面的问题如对象加载机制以及二级缓存(Hibernate和MyBatis).
