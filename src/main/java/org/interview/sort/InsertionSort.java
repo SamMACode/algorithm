@@ -5,13 +5,13 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Arrays;
 
 /**
- * 插入排序算法
+ * InsertionSort:插入排序算法
  *
  * @author dong
  * @create 2018-07-10 下午9:45
  **/
 @Slf4j
-public class InsertionSort extends AbstractBasicSortAlgorithm {
+public class InsertionSort extends AbstractSort {
 
     @Override
     public void sort(Comparable[] array) {
@@ -20,7 +20,7 @@ public class InsertionSort extends AbstractBasicSortAlgorithm {
             // 将array[i]插入到a[i-1]/a[i-2]/a[i-3]..之中,确保的是i之前的数组序列是完全有序地.
             for(int j = i; j > 0 && less(array[j], array[j-1]); j--) {
                 // 对数组array中的元素进行排序,当存在array[j]<array[j-1]的情况,则对其进行交换.
-                exch(array, j, j-1);
+                exchange(array, j, j-1);
             }
         }
     }

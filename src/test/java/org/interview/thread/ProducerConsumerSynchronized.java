@@ -48,7 +48,7 @@ class Producers extends Thread {
                     for (int i = 0; i < 5; i++) {
                         data[i] = new Random().nextInt(10);
                     }
-                    System.out.println("[put]产生了数据data: " + Arrays.toString(data));
+                    System.out.println("[putItem]产生了数据data: " + Arrays.toString(data));
                     nums = 5;
                     // 当在共享数组中填充了所有的数据之后,唤醒其他所有在等待的线程.
                     lock.notifyAll();

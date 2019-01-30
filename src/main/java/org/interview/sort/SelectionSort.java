@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @create 2018-07-09 下午11:03
  **/
 @Slf4j
-public class SelectionSort extends AbstractBasicSortAlgorithm {
+public class SelectionSort extends AbstractSort {
 
     @Override
     public void sort(Comparable[] array) {
@@ -21,9 +21,9 @@ public class SelectionSort extends AbstractBasicSortAlgorithm {
             // 将array[i]与a[i+1..length]中最小的元素交换.
             int min = i;
             for(int j = i+1; j < length; j++) {
-                if(less(array[j], array[min])) min = j;
+                if(less(array[j], array[min])) { min = j; }
                 // 将元素进行交换将最小的元素与内循环中在位置j处的元素进行交换.
-                exch(array, i, min);
+                exchange(array, i, min);
             }
         }
     }

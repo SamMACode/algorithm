@@ -73,7 +73,7 @@ class Producer extends Thread {
                 for(int i = 0; i < 5; i++) {
                     data[i] = new Random().nextInt(10);
                 }
-                System.out.println("[put]生成数组的内容为:" + Arrays.toString(data));
+                System.out.println("[putItem]生成数组的内容为:" + Arrays.toString(data));
                 nums = 5;
                 notEmpty.signal();          // 共享数组中已经填充满数据.
             }

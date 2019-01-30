@@ -1,6 +1,6 @@
 /target/
 !.mvn/wrapper/maven-wrapper.jar
-test/
+
 ### STS ###
 .apt_generated
 .classpath
@@ -15,8 +15,7 @@ test/
 *.iws
 *.iml
 *.ipr
-*.cmd
-mvnw
+*.jar
 
 ### NetBeans ###
 /nbproject/private/
@@ -25,8 +24,3 @@ mvnw
 /dist/
 /nbdist/
 /.nb-gradle/
-
-**/target
-!**/com/chinadaas/base/executor/target
-.logs
-.idea/
