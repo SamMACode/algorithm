@@ -1,6 +1,12 @@
 package org.interview.graph.minitree;
 
+import org.apache.commons.collections.CollectionUtils;
+
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * @author dong
@@ -15,7 +21,7 @@ public class WeightedGraph {
 
     private int edgeNum;
 
-    private ArrayList<Integer>[] adjTable;
+    private ArrayList<WeightEdge>[] adjTable;
 
     public WeightedGraph(int nodeNum) {
         this.nodeNum = nodeNum;
@@ -30,8 +36,8 @@ public class WeightedGraph {
         int fromNode = edge.getFrom();
         int toNode = edge.another(fromNode);
 
-        adjTable[fromNode].add(toNode);
-        adjTable[toNode].add(fromNode);
+        adjTable[fromNode].add(edge);
+        adjTable[toNode].add(edge);
         edgeNum ++;
     }
 
@@ -44,5 +50,28 @@ public class WeightedGraph {
 
     public int getEdgeNum() {
         return edgeNum;
+    }
+
+    /**
+     * find all adjacent edge list by vertex
+     * @param vertex
+     * @return
+     */
+    public Iterable<WeightEdge> adjEdgeList(int vertex) {
+        ArrayList<WeightEdge> adjList = adjTable[vertex];
+        if (CollectionUtils.isEmpty(adjList)) {
+            return Collections.emptyList();
+        }
+        return adjList;
+    }
+
+    /**
+     * find all edges in this graph
+     * @return
+     */
+    public Iterable<WeightEdge> edgeList() {
+        Set<WeightEdge> adjEdgeSet = Arrays.stream(adjTable).flatMap(edgeList -> edgeList.stream())
+                .collect(Collectors.toSet());
+        return adjEdgeSet;
     }
 }

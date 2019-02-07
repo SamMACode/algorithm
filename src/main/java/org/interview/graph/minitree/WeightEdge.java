@@ -37,7 +37,7 @@ public class WeightEdge implements Comparable<WeightEdge> {
 
     @Override
     public int compareTo(WeightEdge another) {
-        if (this.getWeight() < another.getWeight()) { return -1; }
+        if (Double.compare(this.getWeight(), another.getWeight()) < 0) { return -1; }
         else if (this.getWeight() > another.getWeight()) { return 1; }
         else { return 0; }
     }
