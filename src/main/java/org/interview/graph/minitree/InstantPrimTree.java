@@ -34,6 +34,7 @@ public class InstantPrimTree {
         priorityQueue = new IndexMinPQ<>(graph.getNodeNum());
 
         Arrays.stream(weightArray).forEach(item -> item = Double.POSITIVE_INFINITY);
+        // init start node
         weightArray[0] = 0.0;
         priorityQueue.insert(0, 0.0);
         while (!priorityQueue.isEmpty()) {

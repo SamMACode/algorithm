@@ -1,6 +1,6 @@
 package org.interview.graph.minitree;
 
-import org.interview.queue.IndexMinPQ;
+import org.interview.queue.MinPQ;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
@@ -27,12 +27,12 @@ public class LazyPrimTree {
     /**
      * all Prim tree edge list
      */
-    private IndexMinPQ<WeightEdge> priorityQueue;
+    private MinPQ<WeightEdge> priorityQueue;
 
     private double weight;
 
     public LazyPrimTree(WeightedGraph graph) {
-        priorityQueue = new IndexMinPQ<>(graph.getEdgeNum());
+        priorityQueue = new MinPQ<>(graph.getEdgeNum());
         marked = new boolean[graph.getNodeNum()];
         minimalTree = new ArrayDeque<>();
 
