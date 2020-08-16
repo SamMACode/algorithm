@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f131cd08-f931-4fbb-93b9-d6f3acea0546" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/algorithm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph-algorithm/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph-algorithm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sort-algorithm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/impl/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/impl/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/algorithm_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/algorithm_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/find/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/UnionFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/graph/minitree/InstantPrimTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/minitree/InstantPrimTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/graph/minitree/KruskalTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/minitree/KruskalTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/graph/minitree/LazyPrimTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/minitree/LazyPrimTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/graph/minitree/WeightEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/minitree/WeightEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/graph/minitree/WeightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/minitree/WeightedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/queue/IndexMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/IndexMinPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/queue/MinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/MinPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/search/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/SymbolTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/search/symboltables/BinarySearchTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/tables/BinarySearchTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/search/symboltables/SequentialSearchTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/tables/SequentialSearchTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/sort/AbstractSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/AbstractSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/sort/InsertionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/impl/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/impl/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/sort/SelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/sort/ShellSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/impl/ShellSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/interview.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/merge.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/interview/thread/MainThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/interview/thread/ProducerConsumerSynchronized.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/interview/thread/ProducerConsumerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="/opt/apache-maven-3.6.3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectId" id="1gAqcSMhjwY6UKk5PJGeU7EpWSU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/graph-algorithm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sort-algorithm" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.interview.algorithm" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/graph-algorithm" />
+      <recent name="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/tables" />
+      <recent name="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm" />
+      <recent name="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f131cd08-f931-4fbb-93b9-d6f3acea0546" name="Default Changelist" comment="" />
+      <created>1597567823072</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597567823072</updated>
+      <workItem from="1597567827732" duration="3227000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom" timestamp="1597569485397">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1597569485397" />
+    <state width="1398" height="265" key="GridCell.Tab.0.center" timestamp="1597569485395">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1597569485395" />
+    <state width="1398" height="265" key="GridCell.Tab.0.left" timestamp="1597569485394">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1597569485394" />
+    <state width="1398" height="265" key="GridCell.Tab.0.right" timestamp="1597569485396">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1597569485396" />
+    <state x="507" y="151" key="RollbackChangesDialog" timestamp="1597567920974">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="507" y="151" key="RollbackChangesDialog/0.23.1440.821@0.23.1440.821" timestamp="1597567920974" />
+    <state x="221" y="72" key="SettingsEditor" timestamp="1597568338777">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="221" y="72" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1597568338777" />
+    <state x="301" y="23" width="837" height="825" key="find.popup" timestamp="1597567875465">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="301" y="23" width="837" height="825" key="find.popup/0.23.1440.821@0.23.1440.821" timestamp="1597567875465" />
+    <state x="97" y="131" key="new project wizard" timestamp="1597569446609">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="97" y="131" key="new project wizard/0.23.1440.821@0.23.1440.821" timestamp="1597569446609" />
+  </component>
+</project>
