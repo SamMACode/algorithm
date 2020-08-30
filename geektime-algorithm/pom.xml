@@ -3,12 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.interview.algorithm</groupId>
-    <artifactId>graph-algorithm</artifactId>
+    <artifactId>geektime-algorithm</artifactId>
     <parent>
         <groupId>org.interview.algorithm</groupId>
         <artifactId>algorithm</artifactId>
     </parent>
     <version>1.0.0</version>
+    <name>geektime-algorithm</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

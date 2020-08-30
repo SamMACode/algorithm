@@ -2,61 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f131cd08-f931-4fbb-93b9-d6f3acea0546" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/algorithm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph-algorithm/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph-algorithm/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort-algorithm/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/impl/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/impl/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/algorithm_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/algorithm_war_exploded.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geektime-algorithm/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geektime-algorithm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geektime-algorithm/src/main/java/org/interview/algorithm/array/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geektime-algorithm/src/main/java/org/interview/algorithm/linkedlist/LRUBasedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geektime-algorithm/src/main/java/org/interview/algorithm/linkedlist/LRUBasedLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geektime-algorithm/src/main/java/org/interview/algorithm/linkedlist/LinkedListAlgo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geektime-algorithm/src/main/java/org/interview/algorithm/linkedlist/SinglyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geektime-algorithm/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph-algorithm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/find/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/UnionFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/graph/minitree/InstantPrimTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/minitree/InstantPrimTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/graph/minitree/KruskalTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/minitree/KruskalTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/graph/minitree/LazyPrimTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/minitree/LazyPrimTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/graph/minitree/WeightEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/minitree/WeightEdge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/graph/minitree/WeightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/minitree/WeightedGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/queue/IndexMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/IndexMinPQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/queue/MinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/MinPQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/search/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/SymbolTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/search/symboltables/BinarySearchTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/tables/BinarySearchTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/search/symboltables/SequentialSearchTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/tables/SequentialSearchTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/sort/AbstractSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/AbstractSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/sort/InsertionSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/impl/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/impl/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/sort/SelectionSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/interview/sort/ShellSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/impl/ShellSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/interview.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/merge.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/interview/thread/MainThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/interview/thread/ProducerConsumerSynchronized.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/interview/thread/ProducerConsumerThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -74,6 +52,9 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1gAqcSMhjwY6UKk5PJGeU7EpWSU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -82,23 +63,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/graph-algorithm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/geektime-algorithm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sort-algorithm" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.interview.algorithm" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/geektime-algorithm" />
       <recent name="$PROJECT_DIR$/graph-algorithm" />
       <recent name="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm/tables" />
       <recent name="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm" />
       <recent name="$PROJECT_DIR$/sort-algorithm/src/main/java/org/interview/algorithm" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.interview.algorithm" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sort-algorithm" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -111,7 +94,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597567823072</updated>
-      <workItem from="1597567827732" duration="3227000" />
+      <workItem from="1597567827732" duration="4308000" />
+      <workItem from="1597572969037" duration="2001000" />
+      <workItem from="1598143410764" duration="42273000" />
     </task>
     <servers />
   </component>
@@ -146,6 +131,11 @@
             </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
     <option name="OPEN_TABS">
@@ -155,22 +145,74 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="265" key="GridCell.Tab.0.bottom" timestamp="1597569485397">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598775625908">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.825@0.23.1440.825" timestamp="1598775625908" />
+    <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1598757067791" />
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1598773506938">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="533" y="156" key="#com.intellij.ide.util.MemberChooser/0.23.1440.820@0.23.1440.820" timestamp="1598185813008" />
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.825@0.23.1440.825" timestamp="1598773506938" />
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.826@0.23.1440.826" timestamp="1598749869752" />
+    <state width="442" height="466" key="DebuggerActiveHint" timestamp="1598774769799">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="442" height="466" key="DebuggerActiveHint/0.23.1440.825@0.23.1440.825" timestamp="1598774769798" />
+    <state width="453" height="467" key="DebuggerActiveHint/0.23.1440.826@0.23.1440.826" timestamp="1598753667592" />
+    <state width="1398" height="263" key="GridCell.Tab.0.bottom" timestamp="1598775599692">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.820@0.23.1440.820" timestamp="1598188178513" />
     <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1597569485397" />
-    <state width="1398" height="265" key="GridCell.Tab.0.center" timestamp="1597569485395">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="263" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598775599692" />
+    <state width="1398" height="252" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1598754915385" />
+    <state width="1398" height="263" key="GridCell.Tab.0.center" timestamp="1598775599690">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.820@0.23.1440.820" timestamp="1598188178511" />
     <state width="1398" height="265" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1597569485395" />
-    <state width="1398" height="265" key="GridCell.Tab.0.left" timestamp="1597569485394">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="263" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1598775599690" />
+    <state width="1398" height="252" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1598754915383" />
+    <state width="1398" height="263" key="GridCell.Tab.0.left" timestamp="1598775599688">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.820@0.23.1440.820" timestamp="1598188178510" />
     <state width="1398" height="265" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1597569485394" />
-    <state width="1398" height="265" key="GridCell.Tab.0.right" timestamp="1597569485396">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="263" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1598775599688" />
+    <state width="1398" height="252" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1598754915381" />
+    <state width="1398" height="263" key="GridCell.Tab.0.right" timestamp="1598775599691">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1598188178512" />
     <state width="1398" height="265" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1597569485396" />
+    <state width="1398" height="263" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1598775599691" />
+    <state width="1398" height="252" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1598754915384" />
+    <state width="1398" height="263" key="GridCell.Tab.1.bottom" timestamp="1598775599694">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.23.1440.820@0.23.1440.820" timestamp="1598188178516" />
+    <state width="1398" height="263" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598775599694" />
+    <state width="1398" height="252" key="GridCell.Tab.1.bottom/0.23.1440.826@0.23.1440.826" timestamp="1598754915388" />
+    <state width="1398" height="263" key="GridCell.Tab.1.center" timestamp="1598775599694">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.1.center/0.23.1440.820@0.23.1440.820" timestamp="1598188178515" />
+    <state width="1398" height="263" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1598775599694" />
+    <state width="1398" height="252" key="GridCell.Tab.1.center/0.23.1440.826@0.23.1440.826" timestamp="1598754915387" />
+    <state width="1398" height="263" key="GridCell.Tab.1.left" timestamp="1598775599693">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.1.left/0.23.1440.820@0.23.1440.820" timestamp="1598188178514" />
+    <state width="1398" height="263" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1598775599693" />
+    <state width="1398" height="252" key="GridCell.Tab.1.left/0.23.1440.826@0.23.1440.826" timestamp="1598754915386" />
+    <state width="1398" height="263" key="GridCell.Tab.1.right" timestamp="1598775599694">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.1.right/0.23.1440.820@0.23.1440.820" timestamp="1598188178516" />
+    <state width="1398" height="263" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1598775599694" />
+    <state width="1398" height="252" key="GridCell.Tab.1.right/0.23.1440.826@0.23.1440.826" timestamp="1598754915388" />
     <state x="507" y="151" key="RollbackChangesDialog" timestamp="1597567920974">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
@@ -179,13 +221,22 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="221" y="72" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1597568338777" />
+    <state x="503" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598187236391">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state x="503" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.820@0.23.1440.820" timestamp="1598187236391" />
     <state x="301" y="23" width="837" height="825" key="find.popup" timestamp="1597567875465">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="301" y="23" width="837" height="825" key="find.popup/0.23.1440.821@0.23.1440.821" timestamp="1597567875465" />
-    <state x="97" y="131" key="new project wizard" timestamp="1597569446609">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="208" y="147" width="1169" height="605" key="new project wizard" timestamp="1598168805018">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
+    <state x="208" y="147" width="1169" height="605" key="new project wizard/0.23.1440.820@0.23.1440.820" timestamp="1598168805018" />
     <state x="97" y="131" key="new project wizard/0.23.1440.821@0.23.1440.821" timestamp="1597569446609" />
+    <state x="385" y="172" width="670" height="676" key="search.everywhere.popup" timestamp="1598774571085">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="385" y="172" width="670" height="676" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1598774571085" />
   </component>
 </project>

@@ -9,6 +9,7 @@
     <modules>
         <module>sort-algorithm</module>
         <module>graph-algorithm</module>
+        <module>geektime-algorithm</module>
     </modules>
 
     <properties>
