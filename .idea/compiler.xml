@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="graph-algorithm" />
-        <module name="geektime-algorithm" />
         <module name="sort-algorithm" />
+        <module name="geektime-algorithm" />
       </profile>
     </annotationProcessing>
   </component>
