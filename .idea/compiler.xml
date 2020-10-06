@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="graph-algorithm" />
         <module name="geektime-algorithm" />
+        <module name="dynamic-programming" />
         <module name="sort-algorithm" />
       </profile>
     </annotationProcessing>

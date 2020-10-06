@@ -10,6 +10,7 @@
         <module>sort-algorithm</module>
         <module>graph-algorithm</module>
         <module>geektime-algorithm</module>
+        <module>dynamic-programming</module>
     </modules>
 
     <properties>
