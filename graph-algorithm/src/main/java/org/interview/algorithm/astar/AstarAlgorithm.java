@@ -1,30 +1,38 @@
-package org.interview.algorithm.sssp;
+package org.interview.algorithm.astar;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.LinkedList;
 
 /**
  * @author Sam Ma
- * @date 2020/10/07
- * 使用Dijkstra最短路径算法求两点之间的最短路径
+ * @date 2020/10/08
+ * AStar算法的实现，在图中寻找两点间的最短路径
  */
-public class DijkstraAlgorithm {
+public class AstarAlgorithm {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(AstarAlgorithm.class);
 
     /**
      * 临接表存储每个vertex顶点的相邻边
      */
     private LinkedList<Edge> adjacent[];
 
+    private Vertex[] vertices;
+
     /**
      * 表示有向加权图中顶点的个数
      */
     private int vertexNum;
 
-    public DijkstraAlgorithm(int vertexNum) {
+    public AstarAlgorithm(int vertexNum) {
         this.vertexNum = vertexNum;
         this.adjacent = new LinkedList[vertexNum];
         for (int i = 0; i < vertexNum; ++i) {
             this.adjacent[i] = new LinkedList<>();
         }
+        this.vertices = new Vertex[this.vertexNum];
     }
 
     /**
@@ -39,42 +47,48 @@ public class DijkstraAlgorithm {
     }
 
     /**
-     * 找从fromId到toId的最短路径 (Dijkstra算法实现)
+     * 将顶点Vertex添加到Graph中
      *
-     * @param fromId
-     * @param toId
+     * @param id
+     * @param x
+     * @param y
      */
-    public void dijkstra(int fromId, int toId) {
-        // 用于还原最短路径,processors[i]存储的是访问它的结点的id数值
-        int[] processors = new int[this.vertexNum];
-        Vertex[] vertexs = new Vertex[this.vertexNum];
-        for (int i = 0; i < this.vertexNum; ++i) {
-            vertexs[i] = new Vertex(i, Integer.MAX_VALUE);
-        }
+    public void addVertex(int id, int x, int y) {
+        vertices[id] = new Vertex(id, x, y);
+    }
 
-        // 构建小顶堆
+    /**
+     * 通过Astar算法计算从start~end结点之间的距离
+     *
+     * @param start
+     * @param end
+     */
+    public void astar(int start, int end) {
+        // 定义predecessor数组用于还原路径
+        int[] predecessor = new int[this.vertexNum];
         PriorityQueue queue = new PriorityQueue(this.vertexNum);
-        // 标记是否进入过队列
+        /*
+         * 标记是否进入过队列, 优先级队列是根据(dist+hManhattan)来对节点进行排序的
+         */
         boolean[] inqueue = new boolean[this.vertexNum];
-        vertexs[fromId].dist = 0;
-        queue.add(vertexs[fromId]);
-        inqueue[fromId] = true;
+        vertices[start].dist = 0;
+        vertices[start].f = 0;
+        queue.add(vertices[start]);
+        inqueue[start] = true;
 
         while (!queue.isEmpty()) {
-            // 取堆顶元素并且进行删除, 如果minVertex.id为toId 则表明最短路径已经产生了
+            // 获取堆顶元素并将其从堆中进行删除, 在astar算法中优先级队列使用f函数排序
             Vertex minVertex = queue.poll();
-            if (minVertex.id == toId) break;
-
             for (int i = 0; i < adjacent[minVertex.id].size(); ++i) {
-                // 取出一条minVertex相连的边, 根据minEdge获取最小权重边的另外一个顶点
+                // 取出一条minVertex相连接的边, 依据minVertex取出nextVertex结点
                 Edge edge = adjacent[minVertex.id].get(i);
-                Vertex nextVertex = vertexs[edge.toId];
-
-                // 更新nextVertex的distance距离
+                Vertex nextVertex = vertices[edge.toId];
                 if (minVertex.dist + edge.weight < nextVertex.dist) {
                     nextVertex.dist = minVertex.dist + edge.weight;
-                    processors[nextVertex.id] = minVertex.id;
-                    // 更新队列中的distance数值
+                    // f数值计算的是nextVertex与目的结点间的曼哈顿距离, 通过在predecessor中记录下起始点的id
+                    nextVertex.f = nextVertex.dist + hManhattan(nextVertex, vertices[end]);
+                    predecessor[nextVertex.id] = minVertex.id;
+
                     if (inqueue[nextVertex.id] == true) {
                         queue.update(nextVertex);
                     } else {
@@ -82,15 +96,23 @@ public class DijkstraAlgorithm {
                         inqueue[nextVertex.id] = true;
                     }
                 }
+
+                /*
+                 * 当扫描nextVertex.id与终止结点id相同时，将queue中的数据进行清空(跳出while循环)
+                 */
+                if (nextVertex.id == end) {
+                    queue.clear();
+                    break;
+                }
             }
         }
         // 输出最短路径
-        System.out.print(fromId);
-        print(fromId, toId, processors);
+        System.out.print(start);
+        print(start, end, predecessor);
     }
 
     /**
-     * 将使用Dijkstra搜寻到的最短路径进行打印
+     * 将使用astar搜寻到的最短路径进行打印
      *
      * @param fromId
      * @param toId
@@ -100,6 +122,17 @@ public class DijkstraAlgorithm {
         if (fromId == toId) return;
         print(fromId, predecessor[toId], predecessor);
         System.out.print("->" + toId);
+    }
+
+    /**
+     * Vertex表示顶点，计算两点之间的曼哈顿距离
+     *
+     * @param v1
+     * @param v2
+     * @return
+     */
+    private int hManhattan(Vertex v1, Vertex v2) {
+        return Math.abs(v1.x - v2.x) + Math.abs(v1.y - v2.y);
     }
 
     /**
@@ -117,23 +150,31 @@ public class DijkstraAlgorithm {
         }
     }
 
-    /**
-     * Vertex顶点类为了Dijkstra算法实现用的，id为顶点的编号、dist为从起始点到这个顶点的距离
-     */
     private class Vertex {
-        public int id;
-        public int dist;
+        private int id;
+        private int dist;
+        /**
+         * f(i) = g(i) + h(i)
+         */
+        public int f;
+        /**
+         * 新增顶点在地图上的坐标 (x, y)
+         */
+        private int x, y;
 
-        public Vertex(int id, int dist) {
+        public Vertex(int id, int x, int y) {
             this.id = id;
-            this.dist = dist;
+            this.x = x;
+            this.y = y;
+            this.f = Integer.MAX_VALUE;
+            this.dist = Integer.MAX_VALUE;
         }
     }
 
     /**
      * 因为java提供的优先级队列，没有暴露更新数据的接口，所以我们需要重新实现一个(根据vertex.dist构建最小顶堆)
      */
-    public static class PriorityQueue {
+    public class PriorityQueue {
         private Vertex[] nodes;
         /**
          * 堆中可存储的最大数据的个数
@@ -191,6 +232,16 @@ public class DijkstraAlgorithm {
         }
 
         /**
+         * 从下往上进行堆化 (小顶堆～最小的元素在堆顶)
+         */
+        private void heapifyDownToUp(int i) {
+            while (i / 2 > 0 && nodes[i].dist < nodes[i / 2].dist) {
+                swap(i, i / 2);
+                i = i / 2;
+            }
+        }
+
+        /**
          * 自上而下进行堆化 (将较大的元素沉入到堆的底部)
          *
          * @param index
@@ -199,25 +250,15 @@ public class DijkstraAlgorithm {
             while (true) {
                 int minPos = index;
                 // 若当前结点的值大于其左子树结点(index * 2)，对其数值进行交换
-                if (index * 2 < count && nodes[index].dist > nodes[index * 2].dist) minPos = index * 2;
+                if (index * 2 < count && nodes[index].f > nodes[index * 2].f) minPos = index * 2;
                 // 当前结点的数值大于其右子结点(index * 2 + 1), 将其与右子结点进行交换
-                if (index * 2 + 1 <= count && nodes[minPos].dist > nodes[index * 2 + 1].dist) minPos = index * 2 + 1;
+                if (index * 2 + 1 <= count && nodes[minPos].f > nodes[index * 2 + 1].f) minPos = index * 2 + 1;
                 if (minPos == index) break;
                 /*
                  * 交换minPos与当前index的位置，并且将交换后的较小元素继续下沉
                  */
                 swap(index, minPos);
                 index = minPos;
-            }
-        }
-
-        /**
-         * 从下往上进行堆化 (小顶堆～最小的元素在堆顶)
-         */
-        private void heapifyDownToUp(int i) {
-            while (i / 2 > 0 && nodes[i].dist < nodes[i / 2].dist) {
-                swap(i, i / 2);
-                i = i / 2;
             }
         }
 
@@ -232,22 +273,14 @@ public class DijkstraAlgorithm {
             nodes[i] = nodes[maxPos];
             nodes[maxPos] = temp;
         }
+
+        private void clear() {
+            this.count = 0;
+        }
     }
 
     /*public static void main(String[] args) {
-        DijkstraAlgorithm dijkstra = new DijkstraAlgorithm(6);
-        // 向有向图中添加数据: (0-->1, 10), (1-->3, 2), (1-->2, 15), (3-->2, 1), (2-->5, 5), (3-->5, 12)
-        // (0-->4, 15), (4-->5, 10)
-        dijkstra.addEdge(0, 1, 10);
-        dijkstra.addEdge(1, 3, 2);
-        dijkstra.addEdge(1, 2, 15);
-        dijkstra.addEdge(3, 2, 1);
-        dijkstra.addEdge(2, 5, 5);
-        dijkstra.addEdge(3, 5, 12);
-        dijkstra.addEdge(0, 4, 15);
-        dijkstra.addEdge(4, 5, 10);
-        // 使用dijkstra算法查找从结点0-->结点5的最短路径为: 0->1->3->2->5, 路径长度为18
-        dijkstra.dijkstra(0, 5);
+
     }*/
 
 }
