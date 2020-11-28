@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f131cd08-f931-4fbb-93b9-d6f3acea0546" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/geektime-algorithm/src/main/java/org/interview/algorithm/heap/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/astar/AstarAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/insert_sort_algorithm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/merge_sort.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/quick_sort_algorithm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/select_sort_algorithm.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/sssp/DijkstraAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph-algorithm/src/main/java/org/interview/algorithm/sssp/DijkstraAlgorithm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +96,9 @@
       <workItem from="1601647743389" duration="81497000" />
       <workItem from="1602032962038" duration="7866000" />
       <workItem from="1602060186619" duration="100000" />
-      <workItem from="1602061801497" duration="25755000" />
+      <workItem from="1602061801497" duration="26702000" />
+      <workItem from="1602458384324" duration="811000" />
+      <workItem from="1603629702791" duration="78000" />
     </task>
     <servers />
   </component>

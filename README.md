@@ -1,6 +1,6 @@
 ## __算法与数据结构__ ：
 ### __1. 选择排序的算法思路__ :
-<img src="images/select_sort_algorithm.jpg" alt="select_sort_algorithm" style="zoom:62%;" />
+<img src="images/select_sort_algorithm.jpg" alt="select_sort_algorithm" style="zoom:50%;" />
 
 选择排序算法首先会找到数组中最小的元素，其次是将它和数组中第一个元素交换位置(如果第一个元素就是最小的元素，那么它就和自己交换)。在剩下的元素中找到最小的元素，将最小元素与数组的第二个元素交换位置。如此往复，直到将整个数组排序，这种排序算法叫做选择排序（一直选择最小元素）。
 
@@ -17,7 +17,7 @@ for(int j = i+1; j < length; j++) {
 }
 ```
 ### __2. 插入排序的思路__: 
-<img src="images/insert_sort_algorithm.jpg" alt="insert_sort_algorithm" style="zoom:62%;" />
+<img src="images/insert_sort_algorithm.jpg" alt="insert_sort_algorithm" style="zoom:50%;" />
 
 与选择排序一样当前索引左边的所有元素都是有序的，但是它们的最终位置还是不确定，为了给最小的元素腾出空间，它们可能会被移动。当索引到达数组的右端时，数组排序就完成了。与选择排序不同的是：插入排序所需的时间取决于输入元素的初始顺序（前`n`个元素有序）。
 
@@ -47,7 +47,7 @@ while(h < length/3) h = 3*h + 1;     // 计算希尔shell的间隔大小 1, 4, 1
 ```
 ### __4. 归并排序算法的思路__ :
 
-<img src="images/merge_sort.jpg" alt="merge_sort" style="zoom:62%;" />
+<img src="images/merge_sort.jpg" alt="merge_sort" style="zoom:50%;" />
 
 在将两个有序地数组归并成为一个更大的有序数组的递归排序算法：归并排序。要将一个数组排序，可以先递归的将它分为两半分别排序，然后将结果归并起来，它的主要缺点是它所需的额外空间和N成正比。
 
@@ -63,7 +63,7 @@ for(int k = lo; k <= hi; k++) {     // 将array结果归并到array[lo..hi]
 ```
 ### __5. 快速排序算法的思路__ : 
 
-<img src="images/quick_sort_algorithm.jpg" alt="quick_sort_algorithm" style="zoom:62%;" />
+<img src="images/quick_sort_algorithm.jpg" alt="quick_sort_algorithm" style="zoom:50%;" />
 
 快速排序是一种分而治之的排序算法，它将一个数组分为两个子数组，将两部分独立地排序。快速排序和归并排序是互补的；归并排序将数组分为两个子数组分别排序，并将有序地子数组归并以将整个数组排序；而快速排序将数组排序的方式则是当两个子数组都有序地时整个数组也都有序了。在第一种情况下，递归调用发生在处理整个数组之前；在第二种情况中，递归调用发生在处理整个数组之后。在归并排序中，一个数组被等分为两半；在快速排序中，切分(partition)的位置取决于数组的内容。
 
