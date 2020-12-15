@@ -11,6 +11,7 @@
         <module>graph-algorithm</module>
         <module>geektime-algorithm</module>
         <module>dynamic-programming</module>
+        <module>leetcode</module>
     </modules>
 
     <properties>
