@@ -132,7 +132,7 @@ public class Heap {
         return data;
     }
 
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         Heap heap = new Heap(8);
         heap.insertValue(5);
         heap.insertValue(3);
@@ -151,6 +151,6 @@ public class Heap {
         int[] results = heapSort.sortElements(elements, 5);
         // 0    [main] INFO  org.interview.algorithm.heap.Heap  - all elements after sorting is: [0, 3, 5, 6, 7, 9]
         LOGGER.info("all elements after sorting is: {}", Arrays.toString(results));
-    }*/
+    }
 
 }
