@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f131cd08-f931-4fbb-93b9-d6f3acea0546" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort-algorithm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/sort-algorithm/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +127,8 @@
       <workItem from="1609513493492" duration="475000" />
       <workItem from="1612701111900" duration="12624000" />
       <workItem from="1613307663988" duration="684000" />
+      <workItem from="1614527013054" duration="454000" />
+      <workItem from="1614612855285" duration="195000" />
     </task>
     <servers />
   </component>
@@ -230,11 +234,15 @@
     <state width="1398" height="260" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1606531405051" />
     <state width="1398" height="260" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1607522188345" />
     <state width="1398" height="260" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1613182304881" />
-    <state x="397" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1613307664931">
+    <state x="320" y="176" key="Vcs.Push.Dialog.v2" timestamp="1614527444160">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="320" y="176" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1614527444160" />
+    <state x="397" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1614612873450">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="397" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.823@0.23.1440.823" timestamp="1608220143521" />
-    <state x="397" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1613307664931" />
+    <state x="397" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1614612873450" />
     <state x="208" y="148" width="1169" height="605" key="new project wizard" timestamp="1606526333810">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
